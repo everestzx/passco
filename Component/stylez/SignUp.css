@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .auth-page {
+    height: 100vh;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-side {
+    flex: 1;
+    background: #e8f1fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-side img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .form-side {
+    flex: 1;
+    max-width: 500px;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-height: 100%;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    background-color: #fafafa;
+    transition: border 0.2s;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  .row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .row .input-group {
+    flex: 1;
+    min-width: 45%;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #444;
+  }
+  
+  .checkbox a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .checkbox a:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: #d00;
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+  }
+  
+  button {
+    padding: 0.55rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 0.5rem;
+  }
+  
+  button:hover {
+    background: #005bb5;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .image-side {
+      display: none;
+    }
+  
+    .form-side {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  
+    .row .input-group {
+      min-width: 100%;
+    }
+  }
+  

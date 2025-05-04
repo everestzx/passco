@@ -1,0 +1,130 @@
+/* MembershipForm.css */
+.form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.membership-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.form-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  page-break-inside: avoid;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: -15px -15px 15px -15px;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 120px;
+}
+
+.form-group.small {
+  flex: 0.5;
+  min-width: 80px;
+}
+
+.form-group.wide {
+  flex: 2;
+  min-width: 250px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+input[type="date"] {
+  padding: 5px 8px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+@media print {
+  .form-container {
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .form-section {
+    border: none;
+    padding: 10px 0;
+    page-break-inside: avoid;
+  }
+  
+  .section-title {
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+  }
+  
+  .submit-button {
+    display: none;
+  }
+}
